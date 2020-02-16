@@ -1,0 +1,28 @@
+<h1>All Players</h1>
+<ul class="player-list">
+<% @users.each do |user| %>
+  <li class="player-info">
+    <img class="player-image" src="<%= user.image_url %>" alt="<%= user.firstName %>">
+    <div class="player-description">
+      <h2 class="player-name"><%= "#{user.firstName} #{user.lastName}"%></h2>
+      <% user.games.each_with_index do |game, idx| %>
+        <div class="game-info">Game <%= idx+1 %>:
+        <p><%= game.white_player.firstName %> versus <%= game.black_player.firstName %></p>
+        <p><%= game.winning_color %></p>
+        <p><%= game.date_played %></p>
+        </div>
+      <% end %>
+    </div>
+  </li>
+<% end %>
+</ul>
+
+<h1>Add New Game</h1>
+<%= form_for :game do |f| %>
+  Date: <%= f.date_field "date_played", value: Date.today %><br>
+  White Player: <%= f.select "white_id", options_from_collection_for_select(@users, "id", "name") %><br>
+  Black Player: <%= f.select "black_id", options_from_collection_for_select(@users, "id", "name") %><br>
+  Winner: <%= f.select "winning_color", options_for_select(['black', 'white']) %><br>
+  Win By Mate? <%= f.check_box "win_by_mate" %><br>
+  <%= f.submit "Submit Game" %>
+<% end %>

@@ -1,0 +1,37 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.player-info {
+  display: flex;
+  border: 5px solid lightgray;
+  border-radius: 25px;
+  // position: absolute;
+  margin: 20px;
+  width: 600px;
+  padding: 10px;
+}
+
+.player-image {
+  height: 100px;
+  width: auto;
+  border-radius: 25px;
+  align-self: center;
+  margin: 10px;
+  border: 1px solid darkgray;
+}
+
+.player-description {
+  position: relative;
+}
+
+.player-name {
+  font-weight: bolder;
+  align-self: center;
+}
+
+.game-info {
+
+}
