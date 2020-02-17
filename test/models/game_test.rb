@@ -2,15 +2,15 @@
 #
 # Table name: games
 #
-#  id            :integer          not null, primary key
+#  id            :bigint           not null, primary key
 #  date_played   :date
-#  white_id      :integer
-#  black_id      :integer
-#  game_type_id  :integer
-#  winning_color :string
 #  win_by_mate   :boolean
+#  winning_color :string
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
+#  black_id      :integer
+#  game_type_id  :integer
+#  white_id      :integer
 #
 
 require 'test_helper'
