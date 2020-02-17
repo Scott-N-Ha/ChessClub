@@ -6,10 +6,9 @@ class GamesController < ApplicationController
       flash[:notice] = "Successfully saved game"
     else
       flash[:errors] = @game.errors.full_messages.join('');
-    else
-      
-      redirect_to users_url
     end
+    
+    redirect_to users_url
   end
 
   private
