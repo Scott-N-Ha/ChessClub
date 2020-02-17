@@ -10,6 +10,7 @@
   </head>
 
   <body class="main-page">
+    <%= current_user.username if logged_in? %>
     <div class="nav-bar">
       <div class="flash-messages">
         <%= flash[:notice] if flash[:notice] %>
