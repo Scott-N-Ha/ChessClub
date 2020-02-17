@@ -9,7 +9,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="main-page">
+    <div class="nav-bar">
+      <div class="flash-messages">
+        <%= flash[:notice] if flash[:notice] %>
+        <%= flash[:errors] if flash[:errors] %>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>

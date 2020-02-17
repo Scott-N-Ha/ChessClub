@@ -57,3 +57,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.main-page {
+  display: flex;
+}
+
+.flash-messages {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.hidden {
+  display: none !important;
+}

@@ -1,5 +1,29 @@
 {
-  "name": "ChessClub",
+  "name": "webpack",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AA-ScottHa/ChessClub.git"
+  },
+  "author": "Scott Ha Nathan Mendez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AA-ScottHa/ChessClub/issues"
+  },
+  "homepage": "https://github.com/AA-ScottHa/ChessClub#readme"
 }
