@@ -7,7 +7,6 @@ class SessionsController < ApplicationController
     user = User.find_by_credentials(params[:user][:username],
                                     params[:user][:password])
 
-    # fail
     if user
       login_user!(user)
       redirect_to root_url
