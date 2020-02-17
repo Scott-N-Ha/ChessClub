@@ -7,7 +7,7 @@ class GamesController < ApplicationController
     else
       flash[:errors] = @game.errors.full_messages.join('');
     end
-    
+
     redirect_to users_url
   end
 
