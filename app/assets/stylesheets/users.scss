@@ -4,6 +4,8 @@
 
 .players {
   display: flex;
+  flex-direction: column;
+  max-width: 650px;
 }
 
 .player-info {
@@ -38,16 +40,16 @@
   border: 2px solid gray;
 }
 
-
-
-
-
-
-
-
-
-
-
-.hidden {
-  display: none !important;
+.add-new-game-div {
+  display: flex;
+  flex-direction: column;
 }
+
+
+
+
+
+
+
+
+
