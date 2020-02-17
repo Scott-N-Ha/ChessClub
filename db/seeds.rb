@@ -87,7 +87,7 @@ User.destroy_all
 
 users = users.map do |name, url|
   name = name.to_s.split(' ')
-  User.create(firstName: name.first, lastName: name.last, image_url: url)
+  User.create(firstName: name.first, lastName: name.last, image_url: url, password: 'password')
 end
 
 GameType.destroy_all
