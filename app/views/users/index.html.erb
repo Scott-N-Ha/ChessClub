@@ -8,8 +8,8 @@
         <h2 class="player-name"><%= "#{user.firstName} #{user.lastName}"%></h2>
         <% user.games.each_with_index do |game, idx| %>
           <div class="game-info">Game <%= idx+1 %>:
-          <p><%= game.white_player.firstName %> versus <%= game.black_player.firstName %></p>
-          <p><%= game.winning_color %></p>
+          <p><span class="white-player"><%= game.white_player.firstName %></span> versus <span class="black-player"><%= game.black_player.firstName %></span></p>
+          <p><span class="<%= game.winning_color %>-player"><%= game.winning_color.upcase %></span></p>
           <p><%= game.date_played %></p>
           </div>
         <% end %>

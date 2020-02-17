@@ -38,6 +38,19 @@
 
 .game-info {
   border: 2px solid gray;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 2px;
+}
+
+.white-player {
+  color: lightgray;
+  -webkit-text-stroke: 2px black;
+}
+
+.black-player {
+  color: black;
+  // -webkit-text-stroke: 2px lightgray;
 }
 
 .add-new-game-div {
@@ -45,11 +58,9 @@
   flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
+.add-new-game-info {
+  margin: 20px;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  padding: 10px;
+}
