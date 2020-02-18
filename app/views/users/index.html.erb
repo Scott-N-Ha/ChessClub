@@ -21,12 +21,13 @@
 <div class="add-new-game-div">
   <button>Add New Game</button>
   <div class="add-new-game-info">
-    <%= form_for :game do |f| %>
+    <%= form_for :game, url: games_url, method: 'POST' do |f| %>
       Date: <%= f.date_field "date_played", value: Date.today %><br>
       White Player: <%= f.select "white_id", options_from_collection_for_select(@users, "id", "name") %><br>
       Black Player: <%= f.select "black_id", options_from_collection_for_select(@users, "id", "name") %><br>
       Winner: <%= f.select "winning_color", options_for_select(['black', 'white']) %><br>
       Win By Mate? <%= f.check_box "win_by_mate" %><br>
+      Game Type: <%= f.select "game_type_id", options_from_collection_for_select(GameType.all, "id", "game_type") %><br>
       <%= f.submit "Submit Game" %>
     <% end %>
   </div>

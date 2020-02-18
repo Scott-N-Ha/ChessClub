@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://use.fontawesome.com/daf11ff38a.js"></script>
     <title>ChessClub</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -18,5 +19,16 @@
     </div>
 
     <%= yield %>
+
+    <footer>
+      <span>Chess Club. Created by Scott Ha and Nathan Mendes</span>
+      <span class="social-media-links">Social Media Links</span>
+      <ul class="footer-links">
+        <li><a href="https://github.com/AA-ScottHa/ChessClub"><i class="fa fa-github" aria-hidden="true"></i> Chess Club GitHub</a></li>
+        <li><a href="https://github.com/mendesnathanj"><i class="fa fa-github" aria-hidden="true"></i> Nathan Mendes</a></li>
+        <li><a href="https://github.com/AA-ScottHa/"><i class="fa fa-github" aria-hidden="true"></i> Scott Ha</a></li>
+      </ul>
+
+    </footer>
   </body>
 </html>

@@ -68,6 +68,21 @@ table {
 	left: 20px;
 }
 
+footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-media-links+.footer-links {
+	display: none;
+}
+
+.social-media-links:hover+.footer-links {
+	display: block;
+	position: absolute;
+	right: 2;
+}
+
 .hidden {
   display: none !important;
 }
