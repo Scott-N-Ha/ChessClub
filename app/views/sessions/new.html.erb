@@ -1,12 +1,4 @@
 <h1>Sign In Bitches</h1>
-<!--
-<%= form_with url: session_url, method: 'POST' do %>
-  <%= fields :user do |f| %>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
-  <% end %>
-<% end %>
--->
 
 <%= form_for :user, url: session_url, method: 'POST' do |f| %>
   <div>
